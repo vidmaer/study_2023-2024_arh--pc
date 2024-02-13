@@ -1,0 +1,27 @@
+#include <iostream>
+
+int gcd(int a, int b) {
+    if (b == 0) {
+        return a;
+    }
+    return gcd(b, a % b);
+}
+
+int main() {
+    int a, b;
+    
+    std::cout << "a: ";
+    std::cin >> a;
+    
+    std::cout << "b: ";
+    std::cin >> b;
+    
+    int common_divisor = gcd(a, b);
+    
+    int reduced_a = a / common_divisor;
+    int reduced_b = b / common_divisor;
+    
+    std::cout << " " << reduced_a << "/" << reduced_b << std::endl;
+    
+    return 0;
+}
