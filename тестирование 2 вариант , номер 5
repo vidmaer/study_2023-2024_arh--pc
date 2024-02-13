@@ -1,0 +1,14 @@
+def max_elementwise_v2(arr1, arr2):
+  
+    
+    result = []
+    for i in range(len(arr1)):
+        result.append(max(arr1[i], arr2[i]))
+    
+    return result
+
+array1 = input("Массив 1: ")
+array2 = input("Массив 2: ")
+
+result_array = max_elementwise_v2(array1, array2)
+print("Результирующий массив с максимальными элементами: ", result_array)
