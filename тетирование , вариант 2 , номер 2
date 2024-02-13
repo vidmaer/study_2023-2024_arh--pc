@@ -1,0 +1,13 @@
+ 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int k;
+    cin >> k;
+
+    int pairnumber = (k - 1) / 2 + 1;
+    cout << "Номер пары цифр: " << pairnumber << endl;
+
+    return 0;
+}
